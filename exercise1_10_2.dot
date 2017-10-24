@@ -1,0 +1,38 @@
+digraph d{
+	rankdir=LR
+	"0"->"5"->"10"->"15"->"20"->"25"[label="[I=5;O=0]"]
+	"0"->"10"->"20"[label="[I=10;O=0]"]
+	"5"->"15"->"25"[label="[I=10;O=0]"]
+	"0"->"25"[label="[I=25;O=0]"]
+	"25"[shape=doublecircle]
+	"0"[shape=circle]
+	"5"[shape=circle]
+	"10"[shape=circle]
+	"15"[shape=circle]
+	"20"[shape=circle]
+	"5"->"25"[label="[I=25;O=5]"]
+	"10"->"25"[label="[I=25;O=10]"]
+	"15"->"25"[label="[I=25;O=10,5]"]
+	"25"->"25"[label="[I=25;O=10,10]"]
+
+	"20"->"25"[label="[I=10;O=5]"]
+	"25"->"25"[label="[I=10;O=10]"]
+	"25"->"0"[label="[I=C;O=Cola]"]
+	"25"->"0"[label="[I=O;O=Orange]"]
+	"25"->"0"[label="[I=L;O=LemonLime]"]
+
+	"0"->"0"[label="[I=C,O,L;O=0]"]
+	"5"->"5"[label="[I=C,O,L;O=5]"]
+	"10"->"10"[label="[I=C,O;L;O=10]"]
+	"15"->"15"[label="[I=C,O,L;O=15]"]
+	"20"->"20"[label="[I=C,O,L;O=20]"]
+
+	"0"->"0"[label="[I=R,O=0]"]
+	"5"->"0"[label="[I=R,O=5]"]
+	"10"->"0"[label="[I=R,O=10]"]
+	"15"->"0"[label="[I=R,O=15]"]
+	"20"->"0"[label="[I=R,O=20]"]
+	"25"->"0"[label="[I=R,O=25]"]
+
+
+}

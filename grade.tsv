@@ -1,0 +1,17 @@
+Rubric	Points	Possible	Comment
+Recreate font and style in dot	0	1	No attempt was made to match font and style of original figures
+Create all PDFs from dot as instructed	2	2	
+Correct use of LaTeX	2	2	
+All content in proper sections as instructed	1	1	
+Fig1_02	2	2	
+Fig1_04	2	2	
+Fig1_05	2	2	
+Fig1_06	2	2	
+Fig1_08	2	2	
+Fig1_09	2	2	
+Fig1_21	2	2	
+Fig1_10_1	7	8	Use N, D, Q instead of 5, 10, 25, and use Q:N notation for input-output
+Fig1_10_2	5	8	Non-final states should return epsilon on C,O,or L, not a coin amount. Use N, D, Q instead of 5, 10, 25, and use Q:N notation for input-output
+1.10.3	5	8	Father-in-law definition is mostly incorrect.
+1.10.4	4	8	A better solution is to add A:A, B:B, …
+Total	40	52	

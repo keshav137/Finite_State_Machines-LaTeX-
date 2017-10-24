@@ -1,0 +1,109 @@
+\documentclass[landscape]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\date{September 11th, 2017}
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{fixltx2e}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{HW1 LING 490}
+\author{Keshav Malhotra}
+
+\begin{document}
+\maketitle
+
+\section{Figures from the Finite-State Morphology Chapter 1}
+\begin{figure}[!ht]
+\raggedright
+  \includegraphics[]{{fig1_02_dot.pdf}}
+  \caption{Model of an On-Off Light Switch Showing the States and Transitions}
+
+\end{figure}
+
+\begin{figure}[!ht]
+\centering
+\captionsetup{justification=centering,margin=2cm}
+  \includegraphics[]{{fig1_04_dot.pdf}}
+    \caption{State Model of Ken's Old Car Fan}
+\end{figure}
+
+\begin{figure}[!ht]
+\raggedright
+  \includegraphics[]{{fig1_05_dot.pdf}}
+    \caption{A Network that accepts a 1 word language}
+\end{figure}
+
+\begin{figure}[!ht]
+\raggedright
+  \includegraphics[]{{fig1_06_dot.pdf}}
+    \caption{The Cola Machine Accepts a Quarter and Transitions Directly to the Final State}
+\end{figure}
+
+\begin{figure}[!ht]
+\centering
+\captionsetup{justification=centering,margin=2cm}
+  \includegraphics[]{{fig1_08_dot.pdf}}
+   \caption{The Simple Cola Machine}
+
+\end{figure}
+
+\begin{figure}[!ht]
+\raggedright
+  \includegraphics[]{{fig1_09_dot.pdf}}
+   \caption{A Network that Accepts a One-Word Language }
+\end{figure}
+
+\begin{figure}[!ht]
+\raggedright
+  \includegraphics[width=190mm]{{fig1_21_dot.pdf}}
+   \caption{A Network for "clear", "clever", "ear" and "ever" }
+
+\end{figure}
+
+\clearpage
+\section{Exercise1.10.1 }
+
+
+\begin{figure}[!ht]
+  \includegraphics[width=190mm]{{exercise1_10_1_dot.pdf}}
+   \caption{In this figure, the edge labels have the given format : [I: ;O: ], "I" represents the input and "O" represents the output at every transition}
+
+\end{figure}
+\clearpage
+
+\section{Exercise1.10.2 }
+
+
+\begin{figure}[!ht]
+  \includegraphics[width=190mm]{{exercise1_10_2_dot.pdf}}
+  \caption{This figure provides additional input choices(C,O,L that represent Cola, Orange, LemonLime respectively}
+\end{figure}
+\clearpage
+\section{Exercise1.10.3}
+\subsection{Father in Law definition}
+The new definition of father in law would be the following:\\
+fatherInLaw(x): father(spouse(x) || spouse(father(x))
+\subsection{Cousin}
+We need to make sure that we don't include brothers or sisters, which is represented by the term child(parent(x)), for any given child x. So one to define cousins would be the following: 
+
+$cousin(x) = child(child(parent(parent(x)))) - child(parent(x))$\\
+This can be also written as("to the power of i" represents inverse of the function):\\
+$cousin(x)= parent^i(parent^i(child^i(child^inv(x))))- parent^i(child^i(x))$
+% where "^i" represents inverse of the function.
+
+\section{Exercise 1.10.4}
+\subsection{Katze}
+To fix the problem, an upper case transducer can be added which will transform all uppercase characters to lowercase.
+
+\end{document}
+Keshav Malhotra

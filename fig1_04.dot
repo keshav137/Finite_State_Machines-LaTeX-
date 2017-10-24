@@ -1,0 +1,9 @@
+
+digraph d{
+	rankdir=LR
+
+	"OFF"->"LOW"->"MED"->"HIGH" [label= "RIGHT"]
+	"HIGH" ->"MED"-> "LOW" -> "OFF" [label= "LEFT"]
+
+
+}

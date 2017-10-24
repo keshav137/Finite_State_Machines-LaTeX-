@@ -1,0 +1,21 @@
+digraph d{
+	rankdir=LR
+	"A"->"B"[label="c"]
+	"B"->"C"[label="1"]
+	"C"->"D"[label="e"]
+	"D"->"E"[label="a"]
+	"E"->"F"[label="r"]
+	"F"[shape=doublecircle]
+	"A"->"G"[label="e"]
+	"G"->"H"[label="v"]
+	"D"->"H"[label="v"]
+	"H"->"E"[label="e"]
+	"A"[shape=circle]
+	"B"[shape=circle]
+	"C"[shape=circle]
+	"D"[shape=circle]
+	"E"[shape=circle]
+	"G"[shape=circle]
+	"H"[shape=circle]
+
+}

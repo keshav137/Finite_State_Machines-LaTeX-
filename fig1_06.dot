@@ -1,0 +1,7 @@
+digraph{
+	rankdir=LR
+
+	"0"->"25"[label="Q"]
+	"25"[shape=doublecircle]
+	"0"[shape=circle]
+}
